@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Be+Vietnam+Pro:wght@300;400&family=Fira+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Be+Vietnam+Pro:wght@300;400&family=Fira+Sans:wght@400;500&display=swap" rel="stylesheet" />
     <style>
         .img_container {
             margin-top: 50px;
@@ -19,7 +19,7 @@
             letter-spacing: 5px;
             height: 100px;
             margin: 0 auto;
-            font-size: 128px;
+            font-size: 96px;
             font-weight: 700;
             margin-bottom: 150px;
         }
@@ -32,7 +32,6 @@
         
         .banner-font {
             font-size: 72;
-            ;
         }
         
         .time {
@@ -40,72 +39,90 @@
         }
         
         .content_container {
-            font-family: 'Alata', sans-serif;
+            font-family: "Alata", sans-serif;
             margin-bottom: 30px;
             display: flex;
-            width: 60%;
             margin: 0 auto;
         }
         
-        .secondary_image {
+        .secondary_image_desktop {
             margin-top: 40px;
-            width: 60%
+            width: 60%;
         }
         
-        .primary_image {
-            width: 60%
+        .primary_image_desktop {
+            width: 60%;
+        }
+        
+        .primary_image_mobile {
+            display: none;
+        }
+        
+        .secondary_image_mobile {
+            display: none;
         }
         
         .banner {
             width: 90%;
-            margin: 0 auto
+            margin: 0 auto;
         }
         
         .title {
-            margin-left: 200px
+            margin-left: 200px;
         }
         
-        .column_font {
-            font-size: 72px;
+        .count_down_text {
+            word-spacing: 16px;
+            font-size: 48px;
         }
         
         @media screen and (max-width: 900px) {
             .banner {
-                width: 80%;
+                width: 70%;
             }
-            .primary_image {
+            .primary_image_desktop {
+                display: none;
+            }
+            .secondary_image_desktop {
+                display: none;
+            }
+            .primary_image_mobile {
+                display: block;
                 margin: 0 auto;
-                width: 80%;
+                width: 70%;
                 margin-bottom: 20px;
             }
-            .secondary_image {
+            .secondary_image_mobile {
+                display: block;
                 margin: 0 auto;
                 margin-top: 5px;
-                width: 80%
+                width: 70%;
             }
             .img_container {
                 margin: 0 auto;
                 text-align: center;
             }
             .title {
-                width: 90%;
+                width: 70%;
                 margin-left: auto;
-                /* margin: 0 auto; */
-            }
-            .content_container {
-                width: 90%;
             }
             .column {
+                margin-left: 120px;
+                letter-spacing: 0;
                 font-size: medium;
                 height: 30%;
                 margin-bottom: 10px;
             }
-            .column_font {
-                font-size: medium;
+            .count_down_text {
+                word-spacing: 5px;
+                font-size: 8px;
             }
             .column-small {
+                letter-spacing: 0;
                 font-size: medium;
                 font-weight: 700;
+                margin-left: 0px;
+                margin-right: 0px;
             }
         }
         
@@ -120,82 +137,86 @@
     <div class="title" style="">
         <h1>Black Friday Promotions</h1>
     </div>
-    <div class="content_container" style=" ">
+    <div class="content_container" style="">
         <div class="column">
-            <div id="days">24
-            </div>
-            <div class="column_font">DAYS</div>
-        </div>
-        <div class="column-small">:</div>
-        <div class="column">
-            <div id="hrs">12</div>
-            <div class="column_font">HRS</div>
-        </div>
-        <div class="column-small">:</div>
-        <div class="column">
-            <div id="mins">15</div>
-            <div class="column_font">MINS</div>
-        </div>
-        <div class="column-small">:</div>
-        <div class="column">
-            <div id="secs">39</div>
-            <div class="column_font">SECS</div>
+            <div id="count_down_banner"></div>
+            <div class="count_down_text">DAYS HRS MINS SECS</div>
         </div>
     </div>
     <div class="img_container">
-        <img class="primary_image" src="assets/bfbanner.jpg" alt="banner" />
+        <img class="primary_image_desktop" src="assets/bfbanner.jpg" alt="banner" />
+        <img class="primary_image_mobile" src="assets/bfbanner.jpg" alt="banner" />
 
-        <img class="secondary_image" src="assets/Brand Banners/bfnak.jpg" alt="banner" />
+        <img class="secondary_image_desktop" src="assets/Brand Banners/bfnak.jpg" alt="banner" />
+        <img class="secondary_image_mobile" src="assets/Brand Mobile Banners/nakbfcolmob.jpg" alt="banner" />
         <!--1. Nak -->
-        <img class="secondary_image" src="assets/Brand Banners/bfola.jpg" alt="banner" />
+        <img class="secondary_image_desktop" src="assets/Brand Banners/bfola.jpg" alt="banner" />
+        <img class="secondary_image_mobile" src="assets/Brand Mobile Banners/olabfcolmob.jpg" alt="banner" />
         <!--2. olaplex -->
-        <img class="secondary_image" src="assets/Brand Banners/bfc9.jpg" alt="banner" />
+        <img class="secondary_image_desktop" src="assets/Brand Banners/bfc9.jpg" alt="banner" />
+        <img class="secondary_image_mobile" src="assets/Brand Mobile Banners/c9bfcolmob.jpg" alt="banner" />
         <!--3. cloud 9  -->
-        <img class="secondary_image" src="assets/Brand Banners/bfghd.jpg" alt="banner" />
+        <img class="secondary_image_desktop" src="assets/Brand Banners/bfghd.jpg" alt="banner" />
+        <img class="secondary_image_mobile" src="assets/Brand Mobile Banners/ghdbfcolmob.jpg" alt="banner" />
         <!--4. ghd -->
-        <img class="secondary_image" src="assets/Brand Banners/bfevo.jpg" alt="banner" />
+        <img class="secondary_image_desktop" src="assets/Brand Banners/bfevo.jpg" alt="banner" />
+        <img class="secondary_image_mobile" src="assets/Brand Mobile Banners/evobfcolmob.jpg" alt="banner" />
         <!--5. Evo -->
-        <img class="secondary_image" src="assets/Brand Banners/bfmilk.jpg" alt="banner" />
+        <img class="secondary_image_desktop" src="assets/Brand Banners/bfmilk.jpg" alt="banner" />
+        <img class="secondary_image_mobile" src="assets/Brand Mobile Banners/milkbfcolmob.jpg" alt="banner" />
         <!--6. Milk Shake -->
-        <img class="secondary_image" src="assets/Brand Banners/bfmedik8.jpg" alt="banner" />
+        <img class="secondary_image_desktop" src="assets/Brand Banners/bfmedik8.jpg" alt="banner" />
+        <img class="secondary_image_mobile" src="assets/Brand Mobile Banners/medik8bfcolmob.jpg" alt="banner" />
         <!--7. Medk8 -->
-        <img class="secondary_image" src="assets/Brand Banners/bfavene.jpg" alt="banner" />
+        <img class="secondary_image_desktop" src="assets/Brand Banners/bfavene.jpg" alt="banner" />
+        <img class="secondary_image_mobile" src="assets/Brand Mobile Banners/avenebfcolmob.jpg" alt="banner" />
         <!--8. Avenue -->
-        <img class="secondary_image" src="assets/Brand Banners/bfaspect.jpg" alt="banner" />
+        <img class="secondary_image_desktop" src="assets/Brand Banners/bfaspect.jpg" alt="banner" />
+        <img class="secondary_image_mobile" src="assets/Brand Mobile Banners/aspectbfcolmob.jpg" alt="banner" />
         <!--9. Aspect -->
-        <img class="secondary_image" src="assets/Brand Banners/bfmurad.jpg" alt="banner" />
+        <img class="secondary_image_desktop" src="assets/Brand Banners/bfmurad.jpg" alt="banner" />
+        <img class="secondary_image_mobile" src="assets/Brand Mobile Banners/muradbfcolmob.jpg" alt="banner" />
         <!--10. Murad -->
-        <img class="secondary_image" src="assets/Brand Banners/bfasap.jpg" alt="banner" />
+        <img class="secondary_image_desktop" src="assets/Brand Banners/bfasap.jpg" alt="banner" />
+        <img class="secondary_image_mobile" src="assets/Brand Mobile Banners/asapbfcolmob.jpg" alt="banner" />
         <!--11. Asap -->
     </div>
 </body>
 <script>
+    function buildClock() {
+        let countDownH1 = document.createElement("h1");
+
+        let todayDate = new Date();
+
+        let countDownBanner = document.getElementById("count_down_banner");
+
+        let blackFridayDate = new Date("November 25 2021 23:59:59");
+        let daysToGo = blackFridayDate.getDate() - todayDate.getDate();
+        let hrsToGo = blackFridayDate.getHours() - todayDate.getHours();
+        let minsToGo = blackFridayDate.getMinutes() - todayDate.getMinutes();
+        let secsToGo = blackFridayDate.getSeconds() - todayDate.getSeconds();
+
+        let countdownString = `${
+        JSON.stringify(daysToGo) +
+        ":" +
+        JSON.stringify(hrsToGo) +
+        ":" +
+        JSON.stringify(minsToGo) +
+        ":" +
+        JSON.stringify(secsToGo)
+      }`;
+
+        countDownH1.innerHTML = countdownString;
+        countDownBanner.innerText = countdownString;
+    }
+
+    buildClock();
+
     document.body.onload = main;
 
     function main() {
         setInterval(function() {
-            let startDate = new Date();
-
-            let days = document.getElementById("days");
-            let hrs = document.getElementById("hrs");
-            let mins = document.getElementById("mins");
-            let secs = document.getElementById("secs");
-
-            let blackFridayDate = new Date("November 25 2021 23:59:59");
-            let daysToGo = 25 + (31 - startDate.getDate());
-            let hrsToGo = blackFridayDate.getHours() - startDate.getHours();
-            let minsToGo = blackFridayDate.getMinutes() - startDate.getMinutes();
-            let secsToGo = blackFridayDate.getSeconds() - startDate.getSeconds();
-
-            console.log(startDate);
-            console.log(blackFridayDate.getHours() + " hours");
-            console.log(blackFridayDate.getMinutes() + " mins");
-            console.log(blackFridayDate.getSeconds() + " sec");
-
-            days.innerText = daysToGo;
-            hrs.innerText = hrsToGo;
-            mins.innerText = minsToGo;
-            secs.innerText = secsToGo;
+            buildClock();
         }, 1000);
     }
 </script>
