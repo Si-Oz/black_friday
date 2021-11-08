@@ -16,12 +16,16 @@
         }
         
         .column {
-            letter-spacing: 5px;
             height: 100px;
             margin: 0 auto;
-            font-size: 96px;
+            font-size: 128px;
             font-weight: 700;
             margin-bottom: 150px;
+        }
+        
+        #count_down_banner {
+            letter-spacing: 5px;
+            word-spacing: 10px;
         }
         
         .column-small {
@@ -47,11 +51,15 @@
         
         .secondary_image_desktop {
             margin-top: 40px;
-            width: 60%;
+            width: 90%;
+        }
+        
+        .secondary_image_desktop:hover {
+            opacity: 50%;
         }
         
         .primary_image_desktop {
-            width: 60%;
+            width: 90%;
         }
         
         .primary_image_mobile {
@@ -72,19 +80,23 @@
         }
         
         .count_down_text {
-            word-spacing: 16px;
+            word-spacing: 172px;
             font-size: 48px;
         }
         
         @media screen and (max-width: 900px) {
+            #count_down_banner {
+                letter-spacing: 5px;
+                word-spacing: 0px;
+            }
             .content_container {
-                background-color: black;
+                /* background-color: black; */
                 font-family: "Alata", sans-serif;
                 margin-bottom: 30px;
                 display: flex;
                 margin: 0 auto;
-                margin-bottom: 30px;
-                color: rgb(186, 114, 253);
+                /* margin-bottom: 30px; */
+                /* color: rgb(186, 114, 253); */
             }
             .banner {
                 width: 70%;
@@ -99,8 +111,8 @@
                 display: block;
                 margin: 0 auto;
                 width: 100%;
-                height: 200px;
-                margin-bottom: 20px;
+                /* height: 200px; */
+                margin-bottom: 100px;
             }
             .secondary_image_mobile {
                 display: block;
@@ -118,17 +130,17 @@
             }
             .column {
                 letter-spacing: 0;
-                font-size: x-large;
+                /* font-size: x-large; */
                 height: 30%;
                 margin-bottom: 10px;
             }
             .count_down_text {
-                word-spacing: 35px;
+                word-spacing: 84px;
                 font-size: 8px;
             }
             #count_down_banner {
+                font-size: 36px;
                 margin-top: 10px;
-                letter-spacing: 7px;
             }
             .column-small {
                 letter-spacing: 0;
@@ -158,41 +170,52 @@
     </div>
     <div class="img_container">
         <img class="primary_image_desktop" src="assets/bfbanner.jpg" alt="banner" />
-        <img class="primary_image_mobile" src="assets/bfbanner.jpg" alt="banner" />
+        <img class="primary_image_mobile" src="assets/bfbannermob.jpg" alt="banner" />
 
-        <img class="secondary_image_desktop" src="assets/Brand Banners/bfnak.jpg" alt="banner" />
-        <img class="secondary_image_mobile" src="assets/Brand Mobile Banners/nakbfcolmob.jpg" alt="banner" />
         <!--1. Nak -->
-        <img class="secondary_image_desktop" src="assets/Brand Banners/bfola.jpg" alt="banner" />
-        <img class="secondary_image_mobile" src="assets/Brand Mobile Banners/olabfcolmob.jpg" alt="banner" />
+        <a href=""><img class="secondary_image_desktop" src="assets/Brand Banners/bfnak.jpg" alt="banner" /></a>
+        <a href=""><img class="secondary_image_mobile" src="assets/Brand Mobile Banners/nakbfcolmob.jpg" alt="banner" /></a>
+
         <!--2. olaplex -->
-        <img class="secondary_image_desktop" src="assets/Brand Banners/bfc9.jpg" alt="banner" />
-        <img class="secondary_image_mobile" src="assets/Brand Mobile Banners/c9bfcolmob.jpg" alt="banner" />
+        <a href=""><img class="secondary_image_desktop" src="assets/Brand Banners/bfola.jpg" alt="banner" /></a>
+        <a href=""> <img class="secondary_image_mobile" src="assets/Brand Mobile Banners/olabfcolmob.jpg" alt="banner" /></a>
+
         <!--3. cloud 9  -->
-        <img class="secondary_image_desktop" src="assets/Brand Banners/bfghd.jpg" alt="banner" />
-        <img class="secondary_image_mobile" src="assets/Brand Mobile Banners/ghdbfcolmob.jpg" alt="banner" />
+        <a href=""> <img class="secondary_image_desktop" src="assets/Brand Banners/bfc9.jpg" alt="banner" /></a>
+        <a href=""> <img class="secondary_image_mobile" src="assets/Brand Mobile Banners/c9bfcolmob.jpg" alt="banner" /></a>
+
         <!--4. ghd -->
-        <img class="secondary_image_desktop" src="assets/Brand Banners/bfevo.jpg" alt="banner" />
-        <img class="secondary_image_mobile" src="assets/Brand Mobile Banners/evobfcolmob.jpg" alt="banner" />
+        <a href=""> <img class="secondary_image_desktop" src="assets/Brand Banners/bfghd.jpg" alt="banner" /></a>
+        <a href=""> <img class="secondary_image_mobile" src="assets/Brand Mobile Banners/ghdbfcolmob.jpg" alt="banner" /></a>
+
         <!--5. Evo -->
-        <img class="secondary_image_desktop" src="assets/Brand Banners/bfmilk.jpg" alt="banner" />
-        <img class="secondary_image_mobile" src="assets/Brand Mobile Banners/milkbfcolmob.jpg" alt="banner" />
+        <a href=""> <img class="secondary_image_desktop" src="assets/Brand Banners/bfevo.jpg" alt="banner" /></a>
+        <a href=""> <img class="secondary_image_mobile" src="assets/Brand Mobile Banners/evobfcolmob.jpg" alt="banner" /></a>
+
         <!--6. Milk Shake -->
-        <img class="secondary_image_desktop" src="assets/Brand Banners/bfmedik8.jpg" alt="banner" />
-        <img class="secondary_image_mobile" src="assets/Brand Mobile Banners/medik8bfcolmob.jpg" alt="banner" />
+        <a href=""><img class="secondary_image_desktop" src="assets/Brand Banners/bfmilk.jpg" alt="banner" /></a>
+        <a href=""><img class="secondary_image_mobile" src="assets/Brand Mobile Banners/milkbfcolmob.jpg" alt="banner" /></a>
+
         <!--7. Medk8 -->
-        <img class="secondary_image_desktop" src="assets/Brand Banners/bfavene.jpg" alt="banner" />
-        <img class="secondary_image_mobile" src="assets/Brand Mobile Banners/avenebfcolmob.jpg" alt="banner" />
+        <a href=""><img class="secondary_image_desktop" src="assets/Brand Banners/bfmedik8.jpg" alt="banner" /></a>
+        <a href=""><img class="secondary_image_mobile" src="assets/Brand Mobile Banners/medik8bfcolmob.jpg" alt="banner" /></a>
+
         <!--8. Avenue -->
-        <img class="secondary_image_desktop" src="assets/Brand Banners/bfaspect.jpg" alt="banner" />
-        <img class="secondary_image_mobile" src="assets/Brand Mobile Banners/aspectbfcolmob.jpg" alt="banner" />
+        <a href=""><img class="secondary_image_desktop" src="assets/Brand Banners/bfavene.jpg" alt="banner" /></a>
+        <a href=""><img class="secondary_image_mobile" src="assets/Brand Mobile Banners/avenebfcolmob.jpg" alt="banner" /></a>
+
         <!--9. Aspect -->
-        <img class="secondary_image_desktop" src="assets/Brand Banners/bfmurad.jpg" alt="banner" />
-        <img class="secondary_image_mobile" src="assets/Brand Mobile Banners/muradbfcolmob.jpg" alt="banner" />
+        <a href=""><img class="secondary_image_desktop" src="assets/Brand Banners/bfaspect.jpg" alt="banner" /></a>
+        <a href=""><img class="secondary_image_mobile" src="assets/Brand Mobile Banners/aspectbfcolmob.jpg" alt="banner" /></a>
+
         <!--10. Murad -->
-        <img class="secondary_image_desktop" src="assets/Brand Banners/bfasap.jpg" alt="banner" />
-        <img class="secondary_image_mobile" src="assets/Brand Mobile Banners/asapbfcolmob.jpg" alt="banner" />
+        <a href=""><img class="secondary_image_desktop" src="assets/Brand Banners/bfmurad.jpg" alt="banner" /></a>
+        <a href=""><img class="secondary_image_mobile" src="assets/Brand Mobile Banners/muradbfcolmob.jpg" alt="banner" /></a>
+
         <!--11. Asap -->
+        <a href=""><img class="secondary_image_desktop" src="assets/Brand Banners/bfasap.jpg" alt="banner" /></a>
+        <a href=""><img class="secondary_image_mobile" src="assets/Brand Mobile Banners/asapbfcolmob.jpg" alt="banner" /></a>
+
     </div>
 </body>
 <script>
@@ -209,15 +232,23 @@
         let minsToGo = blackFridayDate.getMinutes() - todayDate.getMinutes();
         let secsToGo = blackFridayDate.getSeconds() - todayDate.getSeconds();
 
+        function renderDigit(digit) {
+            console.log(digit)
+            if (digit < 10) {
+                return ("0" + JSON.stringify(digit))
+            } else {
+                return (JSON.stringify(digit))
+            }
+        }
+
+        console.log(renderDigit(secsToGo))
+
         let countdownString = `${
-        JSON.stringify(daysToGo) +
-        ":" +
-        JSON.stringify(hrsToGo) +
-        ":" +
-        JSON.stringify(minsToGo) +
-        ":" +
-        JSON.stringify(secsToGo)
-      }`;
+            renderDigit(daysToGo) + " " + ":" + " " +
+            renderDigit(hrsToGo) + " " +  ":" + " " +
+            renderDigit(minsToGo) + " " +  ":" + " " +
+            renderDigit(secsToGo)
+        }`;
 
         countDownH1.innerHTML = countdownString;
         countDownBanner.innerText = countdownString;
